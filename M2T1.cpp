@@ -2,7 +2,7 @@
 // M2T1 - Product Sales
 // Jeremy Guerrero
 // September 20th, 2025
-// "checkout" machine
+// "Checkout" Machine
 
 #include <iostream>
 #include <iomanip>
