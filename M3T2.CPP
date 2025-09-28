@@ -1,9 +1,9 @@
 /*
-M3T2 - Craps Part 1
+M3T2: Craps Pt. 1
 CSC 134
 Jeremy Guerrero
 September 27th, 2025
-Beginning of the craps game.
+Start of Craps Game
 */
 
 #include <iostream>
@@ -30,9 +30,25 @@ int main() {
         cout << "🎲 Seven or Eleven -- You win!" << endl;
     }
 
-
+else if ( (sum == 2) || (sum == 3) || (sum == 12) ) {
+        cout << "🎲 2,3,12 -- Sorry, you lose." << endl;
+    }
+    else {
+    
+        point = sum;
+        cout << "🎲 Rolled a point. " << endl;
+        cout << "Your point is: " << point << endl;
+    }
 
 
 
     return 0;
+}
+
+
+// Helper Functions
+int roll() {
+    int my_roll;
+    my_roll = (rand() % 6) + 1;
+    return my_roll;
 }
