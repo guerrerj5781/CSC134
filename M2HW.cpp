@@ -37,7 +37,31 @@ int main() {
     cout << "Account Number: " << accountNumber << '\n';
     cout << "Final Balance: $" << finalBal << '\n';
 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // clear buffer
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    cout << "\n===== Question 2: General Crates =====\n";
+
+    const double COST_PER_CUFT   = 0.30;
+    const double CHARGE_PER_CUFT = 0.52;
+
+    double length{}, width{}, height{};
+    cout << "Enter crate length (ft): ";
+    cin  >> length;
+    cout << "Enter crate width  (ft): ";
+    cin  >> width;
+    cout << "Enter crate height (ft): ";
+    cin  >> height;
+
+    double volume = length * width * height;
+    double cost   = volume * COST_PER_CUFT;
+    double charge = volume * CHARGE_PER_CUFT;
+    double profit = charge - cost;
+
+    cout << "\n--- General Crates Report ---\n";
+    cout << "Volume: " << volume << " cubic feet\n";
+    cout << "Cost:   $" << cost   << '\n';
+    cout << "Charge: $" << charge << '\n';
+    cout << "Profit: $" << profit << '\n';
 
     return 0;
 }
