@@ -28,8 +28,16 @@ int main() {
     cout << "Enter withdrawal amount: $";
     cin >> withdrawal;
 
+    srand(static_cast<unsigned>(time(nullptr)));
+    int accountNumber = 100000 + rand() % 900000;
+    double finalBal = startBal + deposit - withdrawal;
 
+    cout << "\n--- Account Summary ---\n";
+    cout << "Name: " << name << '\n';
+    cout << "Account Number: " << accountNumber << '\n';
+    cout << "Final Balance: $" << finalBal << '\n';
 
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // clear buffer
 
     return 0;
 }
