@@ -1,7 +1,7 @@
 // CSC 134
 // M3LAB1 - Example 3: The Office Edition
 // Guerrero, Jeremy
-// 10/3/2025
+// October 4th, 2025
 
 #include <iostream>
 using namespace std;
@@ -12,7 +12,7 @@ void chooseOption3();
 
 int main(){
   int choice;
-  // ask question
+
   cout << "Welcome to Dunder Mifflin: Scranton Branch Decision Simulator" << endl;
   cout << "Choose a branch storyline:" << endl;
   cout << "  1) Michael calls a conference room meeting" << endl;
@@ -39,7 +39,7 @@ int main(){
 }
 
 void chooseOption1() {
-  // this function is called if the user chooses 1
+
   cout << "You chose Michael." << endl;
   cout << "*claps* CONFERENCE ROOM! Everybody in the conference room!" << endl;
   cout << "After a three-hour meeting about why paper is 'the future of the cloud,'" << endl;
@@ -47,7 +47,7 @@ void chooseOption1() {
 }
 
 void chooseOption2() {
-  // this function is called if the user chooses 2
+
   cout << "You chose Jim." << endl;
   cout << "You place Dwight's stapler in a tasteful lime Jell-O mold." << endl;
   cout << "Dwight: 'IDENTITY THEFT IS NOT A JOKE, JIM!'" << endl;
@@ -55,7 +55,7 @@ void chooseOption2() {
 }
 
 void chooseOption3() {
-  // this function is called if the user chooses 3
+
   cout << "You chose Dwight." << endl;
   cout << "You launch a surprise fire drill to test office readiness." << endl;
   cout << "Stanley shouts, Kevin drops chili he was somehow carrying, and chaos ensues." << endl;
