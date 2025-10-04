@@ -14,7 +14,7 @@ October 4th, 2025
 using namespace std;
 
 int main() {
-    cout << fixed << setprecision(2);  // format money to 2 decimals
+    cout << fixed << setprecision(2);
 
     cout << "\n===== Question 1: Banking Transactions =====\n";
     string name;
@@ -79,6 +79,21 @@ int main() {
     int leftOver = totalSlices - slicesNeeded;
 
     cout << "\nPieces of pizza left over: " << leftOver << '\n';
+
+    cout << "\n===== Question 4: FTCC Cheer =====\n";
+
+    string letsGo, school, team, cheerOne, cheerTwo;
+    letsGo   = "Let's go ";
+    school   = "FTCC";
+    team     = "Trojans";
+
+    cheerOne = letsGo + school;
+    cheerTwo = letsGo + team;
+
+    cout << cheerOne << '\n';
+    cout << cheerOne << '\n';
+    cout << cheerOne << '\n';
+    cout << cheerTwo << '\n';
 
     return 0;
 }
