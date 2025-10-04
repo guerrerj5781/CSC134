@@ -63,5 +63,22 @@ int main() {
     cout << "Charge: $" << charge << '\n';
     cout << "Profit: $" << profit << '\n';
 
+    cout << "\n===== Question 3: Pizza Party =====\n";
+    int pizzas{}, slicesPerPizza{}, visitors{};
+    const int SLICES_PER_VISITOR = 3;
+
+    cout << "How many pizzas are you ordering? ";
+    cin  >> pizzas;
+    cout << "How many slices per pizza? ";
+    cin  >> slicesPerPizza;
+    cout << "How many visitors are coming? ";
+    cin  >> visitors;
+
+    int totalSlices = pizzas * slicesPerPizza;
+    int slicesNeeded = visitors * SLICES_PER_VISITOR;
+    int leftOver = totalSlices - slicesNeeded;
+
+    cout << "\nPieces of pizza left over: " << leftOver << '\n';
+
     return 0;
 }
