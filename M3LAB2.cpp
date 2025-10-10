@@ -26,19 +26,19 @@ int main() {
     }
 
     // Determine letter grade using logical AND (&&) and ELSE IF structure
-    if (grade >= 90 && grade <= 100) {
+    if (grade >= 90 && grade <= 100) {           // "A" if 90-100
         letterGrade = 'A';
     }
-    else if (grade >= 80 && grade <= 89) {
+    else if (grade >= 80 && grade <= 89) {       // "B" if 80-89
         letterGrade = 'B';
     }
-    else if (grade >= 70 && grade <= 79) {
+    else if (grade >= 70 && grade <= 79) {       // "C" if 70-79
         letterGrade = 'C';
     } 
-    else if (grade >= 60 && grade <= 69) {
+    else if (grade >= 60 && grade <= 69) {       // "D" if 60-69
         letterGrade = 'D';
     }
-    else { // grade < 60
+    else { // grade < 60                         // "F" if less than 60
         letterGrade = 'F';
     }
 
