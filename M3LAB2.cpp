@@ -38,8 +38,10 @@ int main() {
     else if (grade >= 60 && grade <= 69) {
         letterGrade = 'D';
     }
+    else { // grade < 60
+        letterGrade = 'F';
+    }
 
-    
     // Display result
     cout << "Your letter grade is: " << letterGrade << endl;
 
