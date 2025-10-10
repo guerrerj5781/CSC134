@@ -24,7 +24,11 @@ int main() {
     cout << "What's the width of the second rectangle? ";
     cin >> wid2;
 
-    
+    // Calculate the area of each rectangle using the formula: area = length * width
+    area1 = len1 * wid1;
+    area2 = len2 * wid2;
+
+
 
     return 0; // no errors
 }
