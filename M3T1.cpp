@@ -28,6 +28,21 @@ int main() {
     area1 = len1 * wid1;
     area2 = len2 * wid2;
 
+    // Print the area of both rectangles
+    cout << "The area of the first rectangle is: " << area1 << endl;
+    cout << "The area of the second rectangle is: " << area2 << endl;
+
+    // Compare which rectangle is larger
+    // Added code that determines which rectangle has a larger area and by how much
+    if (area1 > area2) {
+        cout << "The first rectangle is larger by " << area1 - area2 << " square units." << endl;
+    }
+    else if (area2 > area1) {
+        cout << "The second rectangle is larger by " << area2 - area1 << " square units." << endl;
+    }
+    else {
+        cout << "Both rectangles have the same area." << endl;
+    }
 
 
     return 0; // no errors
