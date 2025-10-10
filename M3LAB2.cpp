@@ -26,7 +26,14 @@ int main() {
     }
 
     // Determine letter grade using logical AND (&&) and ELSE IF structure
-       
+    if (grade >= 90 && grade <= 100) {
+        letterGrade = 'A';
+    }
 
+
+    // Display result
+    cout << "Your letter grade is: " << letterGrade << endl;
+
+    // End of program  
     return 0;  
 }
