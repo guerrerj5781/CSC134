@@ -32,7 +32,9 @@ int main() {
     else if (grade >= 80 && grade <= 89) {
         letterGrade = 'B';
     }
-    
+    else if (grade >= 70 && grade <= 79) {
+        letterGrade = 'C';
+    } 
 
     // Display result
     cout << "Your letter grade is: " << letterGrade << endl;
