@@ -23,7 +23,10 @@ int main() {
     if (grade < 0 || grade > 100) {
         cout << "Invalid grade. Please enter a number between 0 and 100." << endl;
         return 1; // exits program early
+    }
 
+    // Determine letter grade using logical AND (&&) and ELSE IF structure
+       
 
     return 0;  
 }
