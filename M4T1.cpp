@@ -33,8 +33,11 @@ int main() {
 
     // print table header
     cout << "Number\tNumber Squared" << endl;
-    
 
+    while (num <= MAX_NUMBER) {
+        cout << num << "\t\t" << num * num << endl;
+        num++;  // increment counter
+    }
 
     return 0;
 }
