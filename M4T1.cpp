@@ -29,7 +29,7 @@ int main() {
     const int MIN_NUMBER = 1;   // starting number
     const int MAX_NUMBER = 10;  // ending number
 
-    int num = MIN_NUMBER;       // initialize counter
+    int num = MIN_NUMBER;
 
     // print table header
     cout << "Number\tNumber Squared" << endl;
