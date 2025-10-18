@@ -75,5 +75,51 @@ int main()
 
     cout << DIVIDER << endl;
 
+    // Question 3: Choose Your Own Adventure - Ron Swanson Theme
+
+    cout << "\n=== Question 3: Choose Your Own Adventure ===\n";
+    cout << "Welcome to Pawnee City Hall!\n";
+    cout << "You spot Ron Swanson guarding a giant steak.\n";
+    cout << "Do you (1) ask for a bite of steak or (2) compliment his mustache? Enter 1 or 2: ";
+
+    int choice1;
+    cin >> choice1;
+
+    if (choice1 == 1)
+    {
+        cout << "Ron frowns: 'Never half-ass two things. Whole-ass one thing.'\n";
+        cout << "You angered him. Game Over.\n";
+    }
+    else if (choice1 == 2)
+    {
+        cout << "Ron nods in approval. You’ve gained his respect.\n";
+        cout << "Now you can (1) offer him a breakfast coupon or (2) show him a government form. Enter 1 or 2: ";
+
+        int choice2;
+        cin >> choice2;
+
+        if (choice2 == 1)
+        {
+            cout << "Ron smiles: 'You had me at breakfast.'\n";
+            cout << "He hands you the legendary Steak of Liberty. Victory!\n";
+        }
+        else if (choice2 == 2)
+        {
+            cout << "Ron groans: 'The less I know about government, the better.'\n";
+            cout << "He walks away. Defeat.\n";
+        }
+        else
+        {
+            cout << "You hesitate too long... Ron disappears into the wilderness. Game Over.\n";
+        }
+    }
+    else
+    {
+        cout << "Indecision is the enemy of steak. Game Over.\n";
+    }
+
+    cout << DIVIDER << endl;
+
+
     return 0;
 }
