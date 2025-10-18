@@ -1,6 +1,6 @@
 /*
 CSC 134
-M3HW1 - Gold
+M3HW1 - GOLD
 GuerreroJ
 10/18/25
 */
@@ -87,7 +87,7 @@ int main()
 
     if (choice1 == 1)
     {
-        cout << "Ron frowns: 'Never half-ass two things. Whole-ass one thing.'\n";
+        cout << "Ron frowns: 'Never half-a$$ two things. Whole-a$$ one thing.'\n";
         cout << "You angered him. Game Over.\n";
     }
     else if (choice1 == 2)
