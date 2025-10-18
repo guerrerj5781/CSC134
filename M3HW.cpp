@@ -120,6 +120,32 @@ int main()
 
     cout << DIVIDER << endl;
 
+    // Question 4: Math Practice Program
+    cout << "\n=== Question 4: Math Practice Program ===\n";
+
+    srand(static_cast<unsigned int>(time(nullptr))); // Seed random number generator
+
+    int num1 = rand() % 10;
+    int num2 = rand() % 10;
+
+    cout << "What is " << num1 << " + " << num2 << "? ";
+    int user_answer;
+    cin >> user_answer;
+
+    int correct_answer = num1 + num2;
+
+    if (user_answer == correct_answer)
+    {
+        cout << "Correct! Great job.\n";
+    }
+    else
+    {
+        cout << "Incorrect. The correct answer was " << correct_answer << ".\n";
+    }
+
+    cout << DIVIDER << endl;
+
+    cout << "\n=== End of M3HW1 Program ===\n";   
 
     return 0;
 }
