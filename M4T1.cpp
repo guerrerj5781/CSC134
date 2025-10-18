@@ -24,5 +24,17 @@ int main() {
 
     cout << "That's all!" << endl;   // printed once after loop ends
 
+    // Program 5-6: Counter variable controls the loop
+
+    const int MIN_NUMBER = 1;   // starting number
+    const int MAX_NUMBER = 10;  // ending number
+
+    int num = MIN_NUMBER;       // initialize counter
+
+    // print table header
+    cout << "Number\tNumber Squared" << endl;
+    
+
+
     return 0;
 }
