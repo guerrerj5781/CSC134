@@ -47,7 +47,33 @@ int main()
 
     cout << DIVIDER << endl;
 
+    // Question 2: Receipt Calculator
+    cout << "\n=== Question 2: Receipt Calculator ===\n";
 
-    
+    const double TAX_RATE = 0.07; // 7% sales tax
+    const double TIP_RATE = 0.15; // 15% tip for dine-in
+
+    double meal_price;
+    cout << "Enter the meal price: ";
+    cin >> meal_price;
+
+    int service_type;
+    cout << "Enter 1 for dine-in or 2 for takeout: ";
+    cin >> service_type;
+
+    double tax = meal_price * TAX_RATE;
+    double tip = (service_type == 1) ? (meal_price * TIP_RATE) : 0.0;
+    double total = meal_price + tax + tip;
+
+    cout << fixed << setprecision(2);
+    cout << "\n------ Receipt ------\n";
+    cout << left << setw(15) << "Meal:" << "$" << meal_price << endl;
+    cout << left << setw(15) << "Tax:" << "$" << tax << endl;
+    cout << left << setw(15) << "Tip:" << "$" << tip << endl;
+    cout << left << setw(15) << "Total:" << "$" << total << endl;
+    cout << "---------------------\n";
+
+    cout << DIVIDER << endl;
+
     return 0;
 }
