@@ -9,7 +9,14 @@ GuerreroJ
 using namespace std;
 
 int main() {
+    int number;  // User's chosen number
+    int i = 1;   // Counter variable
 
+    // Ask until valid input
+    cout << "Enter a number from 1 to 12: ";
+    cin >> number;
+
+    
 
     return 0;
 }
