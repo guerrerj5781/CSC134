@@ -3,7 +3,7 @@ CSC134
 M5LabA
 GuerreroJ
 11/10/2025
-     Inlcude's all three exercises
+Notes: Inlcude's all three exercises. Addtionally, see repo for prompts.txt file
 */
 
 // ===== Game Theme =====
