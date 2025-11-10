@@ -46,3 +46,22 @@ void pressEnter() {
     cout << "\n[ Awaiting user acknowledgment... ]";
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
+
+// -------------------- Character Sheet (header) -------------------
+void showCharacterSheet() {
+    cout << "\n[ MU/TH/UR 6000 TERMINAL // ACCESS GRANTED ]\n";
+    cout << "============================================\n";
+    cout << "CREW MEMBER: " << crewName << "\n";
+    cout << "RANK (GRADE): " << rankLvl << "\n";
+    cout << "============================================\n";
+    cout << "Vitals   [" << bar(vitals, maxVitals) << "] "
+         << vitals << "/" << maxVitals << "\n";
+    cout << "Psyche   [" << bar(psyche, maxPsyche) << "] "
+         << psyche << "/" << maxPsyche << "\n";
+    cout << "============================================\n";
+    cout << "[ Personal Equipment Locker ]\n";
+    for (int i = 0; i < NUM_ITEMS; ++i) {
+        cout << "  • " << equipment[i] << "\n";
+    }
+    cout << "============================================\n";
+}
