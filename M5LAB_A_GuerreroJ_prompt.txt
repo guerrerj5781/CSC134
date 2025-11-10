@@ -1,0 +1,29 @@
+1) I understand that while loops continue until a condition is false. Walk me through how to structure a while loop that increases HP until it reaches max, without causing an infinite loop?
+
+2) What is the practical difference between using a while loop and a for loop when controlling progression in a program? How do I choose between them?
+
+3) How do I build a function that prints a bar meter using a repeated character? I want the bar to visually represent progress (like Vitals).
+
+4) I want to display items in an array with numbering (1., 2., & 3.). What is the clean pattern for looping through an array and formatting output?
+
+5) How does a basic linear search work in an array? I want to understand the logic step-by-step before coding it.
+
+6) Why do I need to use cin.ignore() before getline() when mixing input methods? What problem does it solve?
+
+7) How do I organize my code so each exercise function does one clear task (recover HP, preview level ups, search inventory)?
+
+8) What is a reliable pattern for validating menu input so the program doesn’t break if the user enters something invalid?
+
+9) Can you explain how to safely calculate the filled portion of a bar meter using integer math? I want to avoid fractional issues.
+
+10) Why do arrays use zero-based indexing? What advantages does that have when looping?
+
+11) I want to understand exactly what happens in memory when looping through an array. Can you explain it in a simple mental model?
+
+12) How should I think about constants like NUM_ITEMS or maxVitals? When do I use const vs. just a normal variable?
+
+13) How can I test each function independently to confirm it works before combining everything into the final menu?
+
+14) When making a menu loop using while(true), what is the right way to exit cleanly?
+
+15) How do I make sure my indentation, spacing, and formatting follow standard C++ style so my code is readable/ clean?
