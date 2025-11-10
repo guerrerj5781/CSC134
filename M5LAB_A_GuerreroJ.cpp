@@ -45,3 +45,21 @@ void pressEnter() {
     cout << "\n<Press Enter to continue>";
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
+
+// -------------------- Character Sheet (header) -------------------
+void showCharacterSheet() {
+    cout << "================================\n";
+    cout << "CREW: " << crewName << "\n";
+    cout << "RANK: " << rankLvl << "\n";
+    cout << "================================\n";
+    cout << "Vitals [" << bar(vitals, maxVitals) << "] "
+         << vitals << "/" << maxVitals << "\n";
+    cout << "Psyche [" << bar(psyche, maxPsyche) << "] "
+         << psyche << "/" << maxPsyche << "\n";
+    cout << "================================\n";
+    cout << "EQUIPMENT:\n";
+    for (int i = 0; i < NUM_ITEMS; ++i) {
+        cout << "  " << (i + 1) << ". " << equipment[i] << "\n";
+    }
+    cout << "================================\n";
+}
