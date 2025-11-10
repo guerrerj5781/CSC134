@@ -8,7 +8,7 @@ GuerreroJ
 #include <iostream>
 using namespace std;
 
-// function prototypes
+// function prototypes 
 double getLength();
 double getWidth();
 double getArea(double length, double width);
