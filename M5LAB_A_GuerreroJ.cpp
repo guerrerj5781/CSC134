@@ -19,7 +19,7 @@ GuerreroJ
 using namespace std;
 
 // ----------------------------- Data -----------------------------
-string crewName = "Ellen Ripley";   // Sigourney Weaver, Alien (1979)
+string crewName = "Ellen Ripley";
 int    rankLvl  = 5;                // like “level”
 int    vitals   = 80,  maxVitals = 100;  // HP
 int    psyche   = 60,  maxPsyche = 100;  // MP equivalent
@@ -33,3 +33,15 @@ string equipment[NUM_ITEMS] = {
     "Harpoon Grapple Gun"
 };
 
+// -------------------------- Utilities ---------------------------
+string bar(int current, int maximum, int width = 20) {
+    if (current < 0) current = 0;
+    if (current > maximum) current = maximum;
+    int filled = (maximum > 0) ? (current * width) / maximum : 0;
+    return string(filled, '#') + string(width - filled, '.');
+}
+
+void pressEnter() {
+    cout << "\n<Press Enter to continue>";
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}
