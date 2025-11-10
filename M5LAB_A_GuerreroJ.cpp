@@ -43,6 +43,6 @@ string bar(int current, int maximum, int width = 20) {
 }
 
 void pressEnter() {
-    cout << "\n[ Awaiting user acknowledgment... ]"
+    cout << "\n[ Awaiting user acknowledgment... ]";
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
