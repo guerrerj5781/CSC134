@@ -127,3 +127,41 @@ void exercise3_inventorySystem() {
     }
     pressEnter();
 }
+
+// ============================= MAIN =============================
+int main() {
+    // Intro / character sheet like the lab challenge
+    showCharacterSheet();
+
+    // Simple menu to run any of the three exercises
+    while (true) {
+        cout << "\n╔════════ NOSTROMO TERMINAL ════════╗\n";
+        cout <<   "║ 1) Exercise 1: Recover Vitals     ║\n";
+        cout <<   "║ 2) Exercise 2: Level-Up Preview   ║\n";
+        cout <<   "║ 3) Exercise 3: Inventory Search   ║\n";
+        cout <<   "║ 4) Show Character Sheet           ║\n";
+        cout <<   "║ 5) Exit                           ║\n";
+        cout <<   "╚═══════════════════════════════════╝\n";
+        cout << "Enter choice (1-5): ";
+
+        int choice;
+        if (!(cin >> choice)) {
+            cout << "Invalid input.\n";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
+        }
+
+        switch (choice) {
+            case 1: exercise1_healthRegen();     break;
+            case 2: exercise2_levelUpStats();    break;
+            case 3: exercise3_inventorySystem(); break;
+            case 4: showCharacterSheet();        break;
+            case 5:
+                cout << "Terminal closing… stay frosty, Ripley.\n";
+                return 0;
+            default:
+                cout << "Choose 1–5.\n";
+        }
+    }
+}
