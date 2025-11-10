@@ -93,3 +93,37 @@ void exercise2_levelUpStats() {
     }
     pressEnter();
 }
+
+// ========================= EXERCISE 3 ===========================
+// Title: Inventory System (arrays + loops + search)
+void exercise3_inventorySystem() {
+    cout << "\n[Exercise 3] Bag inventory and search:\n";
+    cout << "=== CURRENT LOADOUT ===\n";
+    for (int i = 0; i < NUM_ITEMS; ++i) {
+        cout << (i + 1) << ". " << equipment[i] << "\n";
+    }
+
+    cout << "\nType item to search (exact match): ";
+    // consume leftover newline from previous >> read
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    string query;
+    getline(cin, query);
+
+    bool found = false;
+    int slot = -1;
+
+    for (int i = 0; i < NUM_ITEMS; ++i) {
+        if (equipment[i] == query) {
+            found = true;
+            slot = i;
+            break; // stop at first match
+        }
+    }
+
+    if (found) {
+        cout << "Found \"" << query << "\" at slot " << (slot + 1) << ".\n";
+    } else {
+        cout << "\"" << query << "\" not found in equipment.\n";
+    }
+    pressEnter();
+}
