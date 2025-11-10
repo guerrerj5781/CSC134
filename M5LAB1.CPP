@@ -39,3 +39,63 @@ void main_menu() {
     cout << "Choose: ";
     cin >> choice;
 
+    if (choice == 1) {
+        choice_sniff_trash();
+    } else if (choice == 2) {
+        choice_dig_under_fence();
+    } else if (choice == 3) {
+        choice_return_inside();
+    } else if (choice == 4) {
+        cout << "Okay, quitting game." << endl;
+        return;
+    } else {
+        cout << "Invalid choice. Please try again." << endl;
+        cin.clear();
+        cin.ignore(10000, '\n');
+        main_menu();
+    }
+}
+
+// STORY FUNCTIONS
+
+void choice_sniff_trash() {
+    int choice;
+    cout << "\nYou run to the trash cans and start sniffing around..." << endl;
+    cout << "Suddenly, the neighbor yells at you to stop making a mess!" << endl;
+    cout << "Do you:" << endl;
+    cout << "1. Run back to your yard" << endl;
+    cout << "2. Keep eating trash anyway" << endl;
+    cout << "Choose: ";
+    cin >> choice;
+
+    if (choice == 1) {
+        main_menu();
+    } else if (choice == 2) {
+        cout << "You get caught and have to go inside for a bath. Game Over." << endl;
+        choice_get_caught();
+    } else {
+        cout << "Invalid choice. Try again." << endl;
+        choice_sniff_trash();
+    }
+}
+
+void choice_dig_under_fence() {
+    int choice;
+    cout << "\nYou scratch at the dirt under the fence..." << endl;
+    cout << "It's slow work, but you're getting through." << endl;
+    cout << "Do you:" << endl;
+    cout << "1. Keep digging" << endl;
+    cout << "2. Sneak around to the front door instead" << endl;
+    cout << "Choose: ";
+    cin >> choice;
+
+    if (choice == 1) {
+        cout << "You dig your way back inside the yard safely! Good dog!" << endl;
+    } else if (choice == 2) {
+        choice_return_inside();
+    } else {
+        cout << "Invalid choice. Try again." << endl;
+        choice_dig_under_fence();
+    }
+}
+
