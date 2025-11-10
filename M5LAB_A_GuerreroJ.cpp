@@ -33,3 +33,16 @@ string equipment[NUM_ITEMS] = {
     "EVA Suit",
     "Harpoon Grapple Gun"
 };
+
+// -------------------------- Utilities ---------------------------
+string bar(int current, int maximum, int width = 20) {
+    if (current < 0) current = 0;
+    if (current > maximum) current = maximum;
+    int filled = (maximum > 0) ? (current * width) / maximum : 0;
+    return string(filled, '#') + string(width - filled, '.');
+}
+
+void pressEnter() {
+    cout << "\n[ Awaiting user acknowledgment... ]"
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}
