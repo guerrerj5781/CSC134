@@ -99,3 +99,59 @@ void choice_dig_under_fence() {
     }
 }
 
+void choice_return_inside() {
+    int choice;
+    cout << "\nYou sneak up to the front of the house." << endl;
+    cout << "The door is cracked open slightly..." << endl;
+    cout << "Do you:" << endl;
+    cout << "1. Push the door open and sneak through" << endl;
+    cout << "2. Climb through the window instead" << endl;
+    cout << "Choose: ";
+    cin >> choice;
+
+    if (choice == 1) {
+        choice_sneak_through_door();
+    } else if (choice == 2) {
+        choice_climb_through_window();
+    } else {
+        cout << "Invalid choice. Try again." << endl;
+        choice_return_inside();
+    }
+}
+
+void choice_sneak_through_door() {
+    cout << "\nYou nudge the door open... quietly..." << endl;
+    cout << "You tiptoe inside and curl up on your dog bed." << endl;
+    cout << "Nobody saw you. You WIN!" << endl;
+}
+
+void choice_climb_through_window() {
+    int choice;
+    cout << "\nYou hop into the window, but land loudly!" << endl;
+    cout << "Your human is in the living room!" << endl;
+    cout << "Do you:" << endl;
+    cout << "1. Hide in the bedroom" << endl;
+    cout << "2. Pretend nothing happened and walk casually" << endl;
+    cout << "Choose: ";
+    cin >> choice;
+
+    if (choice == 1) {
+        choice_hide_in_bedroom();
+    } else if (choice == 2) {
+        choice_get_caught();
+    } else {
+        cout << "Invalid choice. Try again." << endl;
+        choice_climb_through_window();
+    }
+}
+
+void choice_hide_in_bedroom() {
+    cout << "\nYou sprint to the bedroom and jump on the bed!" << endl;
+    cout << "No one sees you. You take a nap. Safe and sound." << endl;
+    cout << "You WIN!" << endl;
+}
+
+void choice_get_caught() {
+    cout << "\nOh no! Your hooman sees you covered in dirt!" << endl;
+    cout << "You get the dreaded bath. Game Over." << endl;
+}
