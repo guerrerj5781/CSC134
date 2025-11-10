@@ -7,10 +7,10 @@ GuerreroJ
 */
 
 // ===== Game Theme =====
-// Theme: Deep-space survival (Alien, 1979)
-// Health: Vitals (HP), Psyche (stress)
-// Ranks: Crew Grades / USCSS ranks (1–10)
-// Items: M41A Pulse Rifle, Motion Tracker, Incinerator, Access Tuner, Company ID
+// Theme: Deep-space survival (Alien, 1979 version)
+// Health: Vitals (HP), Psyche (MP)(stress)
+// Ranks: Crew Grades (1–10)
+// Items: Incinerator, Motion Tracker, Cattle Prod, EVA Suit, Harpoon Grapple.
 
 
 #include <iostream>
@@ -46,7 +46,7 @@ void pressEnter() {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
-// -------------------- Character Sheet (header) -------------------
+// -------------------- Character Sheet -------------------
 void showCharacterSheet() {
     cout << "================================\n";
     cout << "CREW: " << crewName << "\n";
@@ -62,4 +62,22 @@ void showCharacterSheet() {
         cout << "  " << (i + 1) << ". " << equipment[i] << "\n";
     }
     cout << "================================\n";
+}
+
+// ========================= EXERCISE 1 ===========================
+// Title: Health Bar Animation (while loop) — “Rest to recover”
+void exercise1_healthRegen() {
+    cout << "\n[Exercise 1] Resting in med-bay to recover Vitals...\n";
+    // start below max for the demo
+    if (vitals >= maxVitals) vitals = maxVitals - 40;
+
+    while (vitals < maxVitals) {
+        vitals += 10;                          // progress toward exit
+        if (vitals > maxVitals) vitals = maxVitals;
+        cout << "Vitals [" << bar(vitals, maxVitals) << "] "
+             << vitals << "/" << maxVitals << "\n";
+    }
+    cout << "Fully recovered.\n";
+    // (Removed extra cin.ignore here to avoid double Enter)
+    pressEnter();
 }
