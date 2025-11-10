@@ -81,3 +81,15 @@ void exercise1_healthRegen() {
     // (Removed extra cin.ignore here to avoid double Enter)
     pressEnter();
 }
+
+// ========================= EXERCISE 2 ===========================
+// Title: Level Up Stats (for loop) — “Promotion Projections”
+void exercise2_levelUpStats() {
+    cout << "\n[Exercise 2] Promotion projections (next 5 ranks)...\n";
+    int baseGrit = 10; // a simple “strength-like” stat re-themed
+    for (int lvl = 1; lvl <= 5; ++lvl) {
+        int grit = baseGrit + (lvl * 2);
+        cout << "Rank +" << lvl << ": GRIT = " << grit << "\n";
+    }
+    pressEnter();
+}
