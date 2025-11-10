@@ -7,7 +7,7 @@ GuerreroJ
 */
 
 // ===== My Game Theme (notes) =====
-// Theme: Survival Horror – Space (Alien, 1979, USCSS Nostromo, Weyland-Yutani)
+// Theme: Survival Horror – Space (Alien, The 1979 Version, USCSS Nostromo, Weyland-Yutani)
 // Health: Vitals (body status) + Psyche (stress tolerance)
 // Ranks: Warrant Officer Grades (1–10)  (using level 1–10 for labs)
 // Items: Flamethrower, Motion Tracker, Cattle Prod, EVA Suit, Emergency Beacon
@@ -20,7 +20,7 @@ GuerreroJ
 using namespace std;
 
 // ----------------------------- Data -----------------------------
-string crewName = "Ellen Ripley";   // Sigourney Weaver, Alien (1979)
+string crewName = "Ellen Ripley";   // Alien (The 1979 Version)
 int    rankLvl  = 5;                // “level”
 int    vitals   = 80,  maxVitals = 100;
 int    psyche   = 60,  maxPsyche = 100;
