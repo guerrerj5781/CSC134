@@ -21,9 +21,9 @@ int main() {
     int choice;
 
     do {
-        cout << "\n=============================\n";
-        cout << "         M5HW1 MENU\n";
-        cout << "=============================\n";
+        cout << "\n==============================\n";
+        cout << "          M5HW1 MENU\n";
+        cout << "==============================\n";
         cout << "1. Average Rainfall (Q1)\n";
         cout << "2. Block Volume (Q2)\n";
         cout << "3. Roman Numeral (Q3)\n";
@@ -32,4 +32,33 @@ int main() {
         cout << "6. Quit\n";
         cout << "Enter your choice (1-6): ";
         cin >> choice;
+
+        switch (choice) {
+            case 1:
+                averageRainfall();
+                break;
+            case 2:
+                blockVolume();
+                break;
+            case 3:
+                romanNumeral();
+                break;
+            case 4:
+                geometryCalculator();
+                break;
+            case 5:
+                distanceTraveled();
+                break;
+            case 6:
+                cout << "Exiting program. Goodbye!\n";
+                break;
+            default:
+                cout << "The valid choices are 1 through 6.\n";
+                break;
+        }
+
+    } while (choice != 6);
+
+    return 0;
+}
 
