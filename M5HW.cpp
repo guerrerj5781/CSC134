@@ -225,3 +225,36 @@ void geometryCalculator() {
              << "Run the program again and select one of those.\n";
     }
 }
+
+// -----------------------------------------
+// Question 5 – Distance Traveled
+// -----------------------------------------
+void distanceTraveled() {
+    double speed;
+    int hours;
+
+    cout << "\n=== Question 5: Distance Traveled ===\n";
+
+    cout << "What is the speed of the vehicle in mph? ";
+    cin >> speed;
+    cout << "How many hours has it traveled? ";
+    cin >> hours;
+
+    // Input Validation: speed >= 0, hours >= 1
+    if (speed < 0) {
+        cout << "Error: Speed cannot be negative.\n";
+        return;
+    }
+    if (hours < 1) {
+        cout << "Error: Hours must be at least 1.\n";
+        return;
+    }
+
+    cout << "\nHour  Distance Traveled\n";
+    cout << "-----------------------------\n";
+
+    for (int h = 1; h <= hours; h++) {
+        double distance = speed * h;
+        cout << setw(4) << h << setw(15) << distance << endl;
+    }
+}
