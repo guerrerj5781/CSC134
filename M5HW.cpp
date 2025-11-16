@@ -158,7 +158,7 @@ void romanNumeral() {
 }
 
 // -----------------------------------------
-// Question 4 – Geometry Calculator
+// Question 4 – Geometry  Calculator
 // -----------------------------------------
 void geometryCalculator() {
     const double PI = 3.14159;
