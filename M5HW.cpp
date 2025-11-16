@@ -156,3 +156,72 @@ void romanNumeral() {
     cout << "The Roman numeral version of " << number
          << " is " << roman << ".\n";
 }
+
+// -----------------------------------------
+// Question 4 – Geometry Calculator
+// -----------------------------------------
+void geometryCalculator() {
+    const double PI = 3.14159;
+    int choice;
+
+    cout << "\n=== Question 4: Geometry Calculator ===\n";
+    cout << "1. Calculate the Area of a Circle\n";
+    cout << "2. Calculate the Area of a Rectangle\n";
+    cout << "3. Calculate the Area of a Triangle\n";
+    cout << "4. Quit (return to main menu)\n";
+    cout << "Enter your choice (1-4): ";
+    cin >> choice;
+
+    cout << fixed << setprecision(2);
+
+    if (choice == 1) {
+        double radius;
+        cout << "Enter the circle's radius: ";
+        cin >> radius;
+
+        if (radius < 0) {
+            cout << "The radius cannot be less than zero.\n";
+            return;
+        }
+
+        double area = PI * radius * radius;
+        cout << "The area is " << area << endl;
+    }
+    else if (choice == 2) {
+        double length, width;
+        cout << "Enter the rectangle's length: ";
+        cin >> length;
+        cout << "Enter the rectangle's width: ";
+        cin >> width;
+
+        if (length < 0 || width < 0) {
+            cout << "Length and width must be positive.\n";
+            return;
+        }
+
+        double area = length * width;
+        cout << "The area is " << area << endl;
+    }
+    else if (choice == 3) {
+        double base, height;
+        cout << "Enter the triangle's base: ";
+        cin >> base;
+        cout << "Enter the triangle's height: ";
+        cin >> height;
+
+        if (base < 0 || height < 0) {
+            cout << "Only enter positive values for base and height.\n";
+            return;
+        }
+
+        double area = base * height * 0.5;
+        cout << "The area is " << area << endl;
+    }
+    else if (choice == 4) {
+        cout << "Returning to main menu...\n";
+    }
+    else {
+        cout << "The valid choices are 1 through 4. "
+             << "Run the program again and select one of those.\n";
+    }
+}
