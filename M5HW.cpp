@@ -93,3 +93,30 @@ void averageRainfall() {
          << month2 << ", and " << month3
          << " is " << average << " inches.\n";
 }
+
+// -----------------------------------------
+// Question 2 – Volume of a Block
+// -----------------------------------------
+void blockVolume() {
+    double length, width, height;
+
+    cout << "\n=== Question 2: Volume of a Block ===\n";
+
+    cout << "Enter the block's length: ";
+    cin >> length;
+    cout << "Enter the block's width: ";
+    cin >> width;
+    cout << "Enter the block's height: ";
+    cin >> height;
+
+    // Input Validation: no side can be zero or less
+    if (length <= 0 || width <= 0 || height <= 0) {
+        cout << "Error: All sides must be greater than zero.\n";
+        return;
+    }
+
+    double volume = length * width * height;
+
+    cout << fixed << setprecision(2);
+    cout << "The volume of the block is " << volume << " cubic units.\n";
+}
