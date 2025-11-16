@@ -11,11 +11,11 @@ GuerreroJ
 using namespace std;
 
 // Function prototypes
-void averageRainfall();      // Question 1
-void blockVolume();          // Question 2
-void romanNumeral();         // Question 3
-void geometryCalculator();   // Question 4
-void distanceTraveled();     // Question 5
+void averageRainfall();      // question 1
+void blockVolume();          // question 2
+void romanNumeral();         // question 3
+void geometryCalculator();   // question 4
+void distanceTraveled();     // question 5
 
 int main() {
     int choice;
@@ -109,7 +109,7 @@ void blockVolume() {
     cout << "Enter the block's height: ";
     cin >> height;
 
-    // Input Validation: no side can be zero or less
+    // input validation: no side can be zero or less
     if (length <= 0 || width <= 0 || height <= 0) {
         cout << "Error: All sides must be greater than zero.\n";
         return;
@@ -132,7 +132,7 @@ void romanNumeral() {
     cout << "Enter a number (1 - 10): ";
     cin >> number;
 
-    // Input Validation: 1–10
+    // Input validation: 1–10
     if (number < 1 || number > 10) {
         cout << "Error: number must be between 1 and 10.\n";
         return;
@@ -158,7 +158,7 @@ void romanNumeral() {
 }
 
 // -----------------------------------------
-// Question 4 – Geometry  Calculator
+// Question 4 – Geometry Calculator
 // -----------------------------------------
 void geometryCalculator() {
     const double PI = 3.14159;
@@ -240,7 +240,7 @@ void distanceTraveled() {
     cout << "How many hours has it traveled? ";
     cin >> hours;
 
-    // Input Validation: speed >= 0, hours >= 1
+    // input validation: speed >= 0, hours >= 1
     if (speed < 0) {
         cout << "Error: Speed cannot be negative.\n";
         return;
