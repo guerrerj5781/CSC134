@@ -10,7 +10,7 @@ GuerreroJ
 #include <string>
 using namespace std;
 
-// Function declarations
+// function declarations
 void part1();
 void part2();
 
@@ -29,4 +29,35 @@ int main() {
 
     cout << "\nDone.\n";
     return 0;
+}
+
+// Part 1: loop, no arrays
+void part1() {
+    const int NUM_DAYS = 5;
+    string dayNames[NUM_DAYS] = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+
+    int totalCars = 0;
+
+    cout << "Enter the number of cars that passed the site each day (Mon–Fri).\n";
+
+    for (int day = 0; day < NUM_DAYS; day++) {
+        int carsToday;
+
+        cout << "Cars on " << dayNames[day] << ": ";
+        cin >> carsToday;
+
+        // simple input check – don’t allow negative counts
+        while (carsToday < 0) {
+            cout << "Cars can’t be negative. Re-enter for "
+                 << dayNames[day] << ": ";
+            cin >> carsToday;
+        }
+
+        totalCars += carsToday;
+    }
+
+    double average = static_cast<double>(totalCars) / NUM_DAYS;
+
+    cout << "\nTotal cars for the week: " << totalCars << endl;
+    cout << "Average per day:        " << average << endl;
 }
