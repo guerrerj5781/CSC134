@@ -10,7 +10,7 @@ GuerreroJ
 #include <string>
 using namespace std;
 
-// function declarations
+// Function declarations
 void part1();
 void part2();
 
@@ -99,7 +99,7 @@ void part2() {
     cout << "\nTotal cars for the week: " << totalCars << endl;
     cout << "Average per day:        " << average << endl;
 
-    // ASCII bar chart – each # represents ~10 cars
+    // ASCII bar chart – each # represents 10 cars
     cout << "\nCar Counts Bar Chart (each # ≈ 10 cars)\n";
     cout << "---------------------------------------\n";
 
@@ -116,4 +116,4 @@ void part2() {
 
         cout << " (" << cars[i] << ")\n";
     }
-}
+} 
