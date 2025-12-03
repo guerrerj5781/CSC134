@@ -61,3 +61,28 @@ void part1() {
     cout << "\nTotal cars for the week: " << totalCars << endl;
     cout << "Average per day:        " << average << endl;
 }
+
+// Part 2: loop + arrays + ASCII bar chart
+void part2() {
+    const int NUM_DAYS = 5;
+    string daysShort[NUM_DAYS] = { "Mon", "Tue", "Wed", "Thu", "Fri" };
+    string daysLong[NUM_DAYS]  = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+
+    int cars[NUM_DAYS];
+    int totalCars = 0;
+
+    cout << "Enter the number of cars for each day again.\n";
+
+    // store each day’s value in the array
+    for (int i = 0; i < NUM_DAYS; i++) {
+        cout << "Cars on " << daysLong[i] << ": ";
+        cin >> cars[i];
+
+        while (cars[i] < 0) {
+            cout << "Cars can’t be negative. Re-enter for "
+                 << daysLong[i] << ": ";
+            cin >> cars[i];
+        }
+
+        totalCars += cars[i];
+    }
