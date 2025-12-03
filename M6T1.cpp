@@ -86,3 +86,34 @@ void part2() {
 
         totalCars += cars[i];
     }
+
+        double average = static_cast<double>(totalCars) / NUM_DAYS;
+
+    // print table of values
+    cout << "\nDay\tCars\n";
+    cout << "-----------------\n";
+    for (int i = 0; i < NUM_DAYS; i++) {
+        cout << daysShort[i] << "\t" << cars[i] << endl;
+    }
+
+    cout << "\nTotal cars for the week: " << totalCars << endl;
+    cout << "Average per day:        " << average << endl;
+
+    // ASCII bar chart – each # represents ~10 cars
+    cout << "\nCar Counts Bar Chart (each # ≈ 10 cars)\n";
+    cout << "---------------------------------------\n";
+
+    for (int i = 0; i < NUM_DAYS; i++) {
+        cout << setw(3) << daysShort[i] << " | ";
+
+        int numHashes = cars[i] / 10;      // scale
+        if (numHashes == 0 && cars[i] > 0) // show at least 1 if there were cars
+            numHashes = 1;
+
+        for (int j = 0; j < numHashes; j++) {
+            cout << "#";
+        }
+
+        cout << " (" << cars[i] << ")\n";
+    }
+}
