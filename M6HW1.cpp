@@ -29,8 +29,8 @@ void ending_run_away();
 void ending_humiliated_in_ring();
 
 int main() {
-    cout << "M6HW1 - Nacho Libre: Choose Your Own Adventure Prototype\n";
-    cout << "========================================================\n\n";
+    cout << "Nacho Libre: Choose Your Own Adventure\n";
+    cout << "======================================\n\n";
 
     intro();
     monastery_courtyard();
