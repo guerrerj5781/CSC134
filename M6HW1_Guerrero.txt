@@ -1,0 +1,24 @@
+CSC 134
+AI Questions for M6HW1 - Gold
+GuerreroJ
+12/8/2025
+
+How should I structure a C++ choose-your-own-adventure program that uses multiple rooms and functions?
+
+What’s the best way to return the player to a main hub area from different rooms?
+
+How do I store whether the player has an item, like a key, using a boolean variable?
+
+Should the global variable for the key item be a bool or something else?
+
+Can you help me write a reusable function that forces the player to choose a number between two values?
+
+Where should I set the boolean to true once the player finds the pants?
+
+Where should I change game_over = true so the program exits cleanly?
+
+Why won’t my ending trigger? Should the ending functions set the game_over variable?
+
+Why isn’t the game checking my boolean correctly? Did I place the condition in the wrong room?
+
+Why does my program keep repeating the room? Am I missing a return statement?
